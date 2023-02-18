@@ -1,13 +1,14 @@
 import java.util.Arrays;
 
 public class SwapFirstAndLastElement {
-	public static void main(String[] args)
-	 {
-	    int[] array_nums = {20, 30, 40,50,60};
-		System.out.println("Original Array: "+Arrays.toString(array_nums)); 
-		int x = array_nums[0];
-		array_nums[0] = array_nums[array_nums.length-1];
-		array_nums[array_nums.length-1] = x;
-System.out.println("New array after swaping the first and last elements: "+Arrays.toString(array_nums));  
-	 }	
+	public static void main(String[] args) {
+		int a[] = { 20, 30, 40, 50, 60 };
+		int temp = a[0];
+		a[0] = a[a.length - 1];
+		a[a.length - 1] = temp;
+
+		for (int i = 0; i < a.length; i++)
+			System.out.println(a[i]);
+
+	}
 }
